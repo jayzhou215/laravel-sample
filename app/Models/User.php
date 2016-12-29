@@ -43,4 +43,8 @@ class User extends Model implements AuthenticatableContract,
       return "http://www.gravatar.com/avatar/$hash?s=$size";
     }
 
+    public function setPasswordAttribute($password)
+    {
+        $this->attributes['password'] = bcrypt($password);
+    }
 }
