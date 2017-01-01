@@ -8,7 +8,7 @@
     </div>
     <div class="panel-body">
       @include('shared.errors')
-      
+
       <form method="POST" action="{{ route('users.store') }}">
           {{ csrf_field() }}
 
@@ -30,6 +30,10 @@
           <div class="form-group">
             <label for="password_confirmation">确认密码：</label>
             <input type="password" name="password_confirmation" class="form-control" value="{{ old('password_confirmation') }}">
+          </div>
+
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> 记住我</label>
           </div>
 
           <button type="submit" class="btn btn-primary">注册</button>

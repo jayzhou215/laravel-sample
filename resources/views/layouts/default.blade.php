@@ -10,8 +10,11 @@
     <div class="col-md-offset-1 col-md-10">
         @include('shared.messages')
         @yield('content')
+        @include('layouts/_footer')
     </div>
   </div>
-  @include('layouts/_footer')
+  <script src="/js/app.js" type="text/javascript">
+
+  </script>
 </body>
 </html>
