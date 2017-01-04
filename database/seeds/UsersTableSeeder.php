@@ -15,11 +15,12 @@ class UsersTableSeeder extends Seeder
       $users = factory(User::class)->times(50)->make();
       User::insert($users->toArray());
 
-      $myuser = User::find(1);
-      $myuser->name = 'Jay';
-      $myuser->password = '123';
-      $myuser->email = 'jayzhou215@163.com';
-      $myuser->is_admin = true;
-      $myuser->save();
+      $user = User::find(1);
+      $user->name = 'Jay';
+      $user->password = '123';
+      $user->email = 'jayzhou215@163.com';
+      $user->is_admin = true;
+      $user->activated = true;
+      $user->save();
     }
 }
