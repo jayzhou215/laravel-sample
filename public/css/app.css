@@ -5842,6 +5842,24 @@ section.user_info {
   max-width: 50px;
   border-radius: 50%; }
 
+/* Users edit */
+.gravatar_edit {
+  margin: 15px auto;
+  text-align: center; }
+  .gravatar_edit .gravatar {
+    float: none;
+    max-width: 100px; }
+
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  .users li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee; }
+
 /* forms */
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
